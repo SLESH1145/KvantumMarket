@@ -35,7 +35,7 @@ namespace KvantumMarket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1233, 609);
+            this.ClientSize = new System.Drawing.Size(979, 511);
             this.Name = "Form1";
             this.Text = "KvantumMarket";
             this.ResumeLayout(false);
