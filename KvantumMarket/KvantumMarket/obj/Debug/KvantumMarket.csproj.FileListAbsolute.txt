@@ -1,0 +1,13 @@
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\KvantumMarket.exe.config
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\KvantumMarket.exe
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\KvantumMarket.pdb
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\IronWebScraper.dll
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\IronWebScraper.xml
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.AssemblyReference.cache
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.Form1.resources
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.Properties.Resources.resources
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.GenerateResource.cache
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.CoreCompileInputs.cache
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.CopyComplete
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.exe
+D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.pdb
