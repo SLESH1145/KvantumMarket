@@ -31,7 +31,7 @@ namespace KvantumMarket
         {
             this.search_string = new System.Windows.Forms.TextBox();
             this.button_search = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.info = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // search_string
@@ -51,20 +51,20 @@ namespace KvantumMarket
             this.button_search.UseVisualStyleBackColor = true;
             this.button_search.Click += new System.EventHandler(this.button_search_Click);
             // 
-            // label1
+            // info
             // 
-            this.label1.Location = new System.Drawing.Point(24, 116);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 159);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.info.Location = new System.Drawing.Point(24, 116);
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(238, 159);
+            this.info.TabIndex = 2;
+            this.info.Text = "inf";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 511);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.info);
             this.Controls.Add(this.button_search);
             this.Controls.Add(this.search_string);
             this.Name = "Form1";
@@ -78,7 +78,7 @@ namespace KvantumMarket
 
         private System.Windows.Forms.TextBox search_string;
         private System.Windows.Forms.Button button_search;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label info;
     }
 }
 

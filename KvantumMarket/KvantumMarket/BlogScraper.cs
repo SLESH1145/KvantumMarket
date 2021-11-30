@@ -9,29 +9,28 @@ namespace KvantumMarket
 {
     class BlogScraper : WebScraper
     {
-        public string search; 
+        public string search = "смартфон";
         public BlogScraper()
         {
-            ObeyRobotsDotTxt = false;           
+            ObeyRobotsDotTxt = false;
         }
-        public void Search(string searh1)
+        public void Search(string search)
         {
-            search = searh1;
+            this.search = search;
         }
         public override void Init()
         {
             this.LoggingLevel = WebScraper.LogLevel.All;
-            Console.WriteLine(search);
-            //this.Request($"https://www.eldorado.ru/search/catalog.php?q=", Parse );
+            Console.WriteLine(search);           
             this.Request($"https://www.eldorado.ru/search/catalog.php?q={search}&utf", Parse);
         }
         public override void Parse(Response response)
         {
-            foreach (var title_link in response.XPath("//div[@id='listing-container']/ul/li"))
+            foreach (var title_link in response.XPath("//body"))
             {
                 string strTitle = title_link.TextContentClean;
                 //string strTitle = title_link.TextContentClean;
-                Scrape(new ScrapedData() { { "sadf", strTitle } });
+                Scrape(new ScrapedData() { { "sadf", strTitle } });                
             }
 
         }

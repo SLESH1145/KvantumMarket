@@ -13,16 +13,20 @@ namespace KvantumMarket
 {
     public partial class Form1 : Form
     {
-        BlogScraper scraper = new BlogScraper();
+        
         public Form1()
         {
             InitializeComponent();
+           
         }
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            scraper.Search(search_string.Text);
 
+            BlogScraper scraper = new BlogScraper();
+            scraper.Start();
         }
+        
+        
     }
 }
