@@ -22,17 +22,22 @@ namespace KvantumMarket
         {
             this.LoggingLevel = WebScraper.LogLevel.All;
             Console.WriteLine(search);           
-            this.Request($"https://www.eldorado.ru/search/catalog.php?q={search}&utf", Parse);
+            this.Request($"{search}", Parse);
         }
         public override void Parse(Response response)
         {
-            foreach (var title_link in response.XPath("//body"))
+            foreach (var title_link in response.XPath("//div/span[@data-pc='offer_price']"))
             {
-                string strTitle = title_link.TextContentClean;
-                //string strTitle = title_link.TextContentClean;
-                Scrape(new ScrapedData() { { "sadf", strTitle } });                
+                string price_eld = title_link.TextContentClean;
+                Console.WriteLine(price_eld);
+                break;               
             }
-
+            foreach (var name in response.XPath("//div/a[@data-dy='title']"))
+            {
+                string name_product_eld = name.TextContentClean;
+                Console.WriteLine(name_product_eld);
+                break;
+            }
         }
     }
 }

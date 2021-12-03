@@ -21,9 +21,11 @@ namespace KvantumMarket
         }
 
         private void button_search_Click(object sender, EventArgs e)
-        {
-
+        {            
             BlogScraper scraper = new BlogScraper();
+            string search = search_string.Text;
+            string search_link_eld = $"https://www.eldorado.ru/search/catalog.php?q={search}";
+            scraper.Search(search_link_eld);
             scraper.Start();
         }
         
