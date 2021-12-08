@@ -11,3 +11,16 @@ D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.C
 D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.CopyComplete
 D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.exe
 D:\C#\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.pdb
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\KvantumMarket.exe.config
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\KvantumMarket.exe
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\KvantumMarket.pdb
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\IronWebScraper.dll
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\bin\Debug\IronWebScraper.xml
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.AssemblyReference.cache
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.Form1.resources
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.Properties.Resources.resources
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.GenerateResource.cache
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.CoreCompileInputs.cache
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.csproj.CopyComplete
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.exe
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\KvantumMarket\obj\Debug\KvantumMarket.pdb

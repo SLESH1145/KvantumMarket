@@ -61,6 +61,7 @@ namespace KvantumMarket
             // 
             // Form1
             // 
+            this.AcceptButton = this.button_search;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 511);
@@ -69,6 +70,7 @@ namespace KvantumMarket
             this.Controls.Add(this.search_string);
             this.Name = "Form1";
             this.Text = "KvantumMarket";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
