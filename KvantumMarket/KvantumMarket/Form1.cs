@@ -23,9 +23,10 @@ namespace KvantumMarket
         private void button_search_Click(object sender, EventArgs e)
         {       
             string search = search_string.Text;
-            links.Add($"https://www.eldorado.ru/search/catalog.php?q={search}");
-            //links.Add($"https://www.dns-shop.ru/search/?q={search}");
-            links.Add($"https://www.mvideo.ru/product-list-page?q={search}");           
+            //links.Add($"https://www.eldorado.ru/search/catalog.php?q={search}");
+            links.Add($"https://www.onlinetrade.ru/sitesearch.html?query={search}");
+            links.Add($"https://www.citilink.ru/search/?text={search}");       
+            //links.Add($"https://market.yandex.ru/search?text={search}");       
             scraper.StartAsync();
             Console.WriteLine("asdsad");
         }
@@ -33,6 +34,7 @@ namespace KvantumMarket
         private void Form1_Load(object sender, EventArgs e)
         {
            scraper = new BlogScraper(links);
+            
 
         }
     }

@@ -57,7 +57,6 @@ namespace KvantumMarket
             this.info.Name = "info";
             this.info.Size = new System.Drawing.Size(238, 159);
             this.info.TabIndex = 2;
-            this.info.Text = "inf";
             // 
             // Form1
             // 

@@ -23,42 +23,72 @@ namespace KvantumMarket
             this.LoggingLevel = WebScraper.LogLevel.All;                      
             this.Request(links, Parse);
         }
-
-        public void SetXPath(string url)
+        public override void Parse(Response response)
         {
-            if (url.Contains("eldorado.ru"))
+
+            if (response.FinalUrl.Contains("eldorado.ru"))
             {
                 xpath_price = "//div/span[@data-pc='offer_price']";
                 xpath_name = "//div/a[@data-dy='title']";
-            }
-            else if (url.Contains("dns-shop.ru")) 
-            {
-                xpath_price = "//div[@class='product-buy__price product-buy__price_active']";
-                xpath_name = "//a[@class='catalog-product__name ui-link ui-link_black']/span";
-            }
-            else if (url.Contains("mvideo.ru"))
-            {
-                xpath_price = "//span[@class='price__main-value']";
-                xpath_name = "//a[@class='product-title__text product-title--clamp']";
-            }
-        }
-        public override void Parse(Response response)
-        {
-            SetXPath(response.FinalUrl);
-            
-            foreach (var title_link in response.XPath(xpath_price))
-            {
-                string price_eld = title_link.TextContentClean;
-                Console.WriteLine(price_eld);
-                break;               
-            }
 
-            foreach (var name in response.XPath(xpath_name))
+            }
+            else if (response.FinalUrl.Contains("www.onlinetrade.ru"))
             {
-                string name_product_eld = name.TextContentClean;
-                Console.WriteLine(name_product_eld);
-                MessageBox.Show(name_product_eld);
+                xpath_price = "//span[@class='price regular']";
+                xpath_name = "//a[@class='indexGoods__item__name']";
+
+            } 
+            else if (response.FinalUrl.Contains("www.citilink.ru"))
+            {
+                xpath_price = "//div[@class='product_data__gtm-js product_data__pageevents-js  ProductCardVertical js--ProductCardInListing ProductCardVertical_normal ProductCardVertical_shadow-hover ProductCardVertical_separated']/div/div[@class='ProductCardVerticalLayout__footer']/div[@class='ProductCardVerticalLayout__wrapper-cart']/div/div/div/div/div[@class='ProductPrice ProductPrice_default ProductCardVerticalPrice__price-current']/span/span";
+                xpath_name = "//div[@class='ProductCardVertical__description ']/a[@target='_self']";
+
+            }
+            
+                foreach (var title_link in response.XPath(xpath_price))
+                {
+                string price_eld = title_link.TextContentClean;
+                if (response.FinalUrl.Contains("www.onlinetrade.ru"))
+                {
+                    MessageBox.Show(price_eld + "Онлайн трейд");                    
+                }
+                if (response.FinalUrl.Contains("eldorado.ru"))
+                {
+                    MessageBox.Show(price_eld + "eldorado");
+                }              
+                if (response.FinalUrl.Contains("www.citilink.ru"))
+                {
+                    MessageBox.Show(price_eld + "citilink");
+                }
                 break;
+                }
+            try
+            {
+                foreach (var name in response.XPath(xpath_name))
+                {
+
+                    string name_product_eld = name.TextContentClean;
+                    if (response.FinalUrl.Contains("www.onlinetrade.ru"))
+                    {
+                        MessageBox.Show(name_product_eld + "Онлайн трейд");
+                    }
+                    if (response.FinalUrl.Contains("eldorado.ru"))
+                    {
+                        MessageBox.Show(name_product_eld + "eldorado");
+                    }
+                    if (response.FinalUrl.Contains("www.citilink.ru"))
+                    {
+                        MessageBox.Show(name_product_eld + "citilink");
+                    }
+                    break;
+
+                }
+                
+            }
+            catch (System.NullReferenceException)
+            {
+
+                throw;
             }
         }
     }
