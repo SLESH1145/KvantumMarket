@@ -64,7 +64,6 @@ namespace KvantumMarket
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::KvantumMarket.Properties.Resources.Eldorado_Logo;
             this.pictureBox4.Location = new System.Drawing.Point(383, 312);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(294, 89);
@@ -74,7 +73,6 @@ namespace KvantumMarket
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::KvantumMarket.Properties.Resources.Citilink_logo;
             this.pictureBox2.Location = new System.Drawing.Point(12, 312);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(294, 89);
