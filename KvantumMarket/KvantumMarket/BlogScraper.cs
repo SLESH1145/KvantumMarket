@@ -27,7 +27,7 @@ namespace KvantumMarket
         {
             Console.WriteLine();
             this.LoggingLevel = WebScraper.LogLevel.All;                      
-            this.Request($"https://www.e-katalog.ru/ek-list.php?katalog_=122&search_={search}", Parse);
+            this.Request($"https://www.e-katalog.ru/ek-list.php?search={search}", Parse);
 
         }
         public override void Parse(Response response)
