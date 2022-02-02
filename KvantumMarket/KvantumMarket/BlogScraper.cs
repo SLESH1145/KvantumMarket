@@ -27,7 +27,7 @@ namespace KvantumMarket
         {
             Console.WriteLine();
             this.LoggingLevel = WebScraper.LogLevel.All;                      
-            this.Request($"https://www.e-katalog.ru/ek-list.php?search={search}", Parse);
+            this.Request($"https://www.e-katalog.ru/ek-list.php?search_={search}", Parse);
 
         }
         public override void Parse(Response response)
@@ -47,7 +47,6 @@ namespace KvantumMarket
 
             foreach (var title_link in response.XPath("//td/a[@rel='nofollow']"))
             {
-
                 string price = title_link.TextContentClean;
                 MessageBox.Show(price);
                 if (i == 7)
@@ -57,6 +56,7 @@ namespace KvantumMarket
                 else
                     i++;
             }
+
         }
     }
 }
