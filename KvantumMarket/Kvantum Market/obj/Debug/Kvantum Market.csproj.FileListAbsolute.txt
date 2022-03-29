@@ -1,0 +1,36 @@
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Kvantum Market.exe.config
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Kvantum Market.exe
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Kvantum Market.pdb
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.AssemblyReference.cache
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum_Market.KvantuMarket.resources
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum_Market.Properties.Resources.resources
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.GenerateResource.cache
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.CoreCompileInputs.cache
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.exe
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.pdb
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\HtmlAgilityPack.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\HtmlAgilityPack.pdb
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\HtmlAgilityPack.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.CopyComplete
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\WebDriver.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BouncyCastle.Crypto.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BrotliSharpLib.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Microsoft.Win32.Registry.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Buffers.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Memory.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Numerics.Vectors.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.AccessControl.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.Principal.Windows.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Titanium.Web.Proxy.dll
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BouncyCastle.Crypto.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BrotliSharpLib.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Microsoft.Win32.Registry.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Buffers.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Memory.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Numerics.Vectors.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.AccessControl.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.Principal.Windows.xml
+D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Threading.Tasks.Extensions.xml
