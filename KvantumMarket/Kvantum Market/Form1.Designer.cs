@@ -88,7 +88,7 @@ namespace Kvantum_Market
             this.img_eld.Location = new System.Drawing.Point(197, 89);
             this.img_eld.Name = "img_eld";
             this.img_eld.Size = new System.Drawing.Size(119, 172);
-            this.img_eld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.img_eld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_eld.TabIndex = 3;
             this.img_eld.TabStop = false;
             // 
@@ -108,7 +108,7 @@ namespace Kvantum_Market
             this.img_mv.Location = new System.Drawing.Point(567, 89);
             this.img_mv.Name = "img_mv";
             this.img_mv.Size = new System.Drawing.Size(119, 172);
-            this.img_mv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.img_mv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_mv.TabIndex = 5;
             this.img_mv.TabStop = false;
             // 
@@ -128,7 +128,7 @@ namespace Kvantum_Market
             this.img_el.Location = new System.Drawing.Point(926, 89);
             this.img_el.Name = "img_el";
             this.img_el.Size = new System.Drawing.Size(119, 172);
-            this.img_el.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.img_el.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_el.TabIndex = 7;
             this.img_el.TabStop = false;
             // 
@@ -148,7 +148,7 @@ namespace Kvantum_Market
             this.img_ya.Location = new System.Drawing.Point(197, 308);
             this.img_ya.Name = "img_ya";
             this.img_ya.Size = new System.Drawing.Size(119, 172);
-            this.img_ya.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.img_ya.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ya.TabIndex = 9;
             this.img_ya.TabStop = false;
             // 
@@ -158,7 +158,7 @@ namespace Kvantum_Market
             this.img_sb.Location = new System.Drawing.Point(567, 308);
             this.img_sb.Name = "img_sb";
             this.img_sb.Size = new System.Drawing.Size(119, 172);
-            this.img_sb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.img_sb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_sb.TabIndex = 10;
             this.img_sb.TabStop = false;
             // 
