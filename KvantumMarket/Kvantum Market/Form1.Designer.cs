@@ -59,6 +59,7 @@ namespace Kvantum_Market
             // 
             // start_search
             // 
+            this.start_search.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.start_search.Location = new System.Drawing.Point(683, 14);
             this.start_search.Name = "start_search";
             this.start_search.Size = new System.Drawing.Size(41, 23);
@@ -174,6 +175,7 @@ namespace Kvantum_Market
             // 
             // KvantuMarket
             // 
+            this.AcceptButton = this.start_search;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

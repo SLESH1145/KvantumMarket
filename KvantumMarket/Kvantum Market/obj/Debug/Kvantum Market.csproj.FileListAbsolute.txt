@@ -70,3 +70,4 @@ C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\o
 C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.CopyComplete
 C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.exe
 C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.pdb
+C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\WebDriver.Support.dll
