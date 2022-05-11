@@ -17,19 +17,16 @@ namespace Kvantum_Market
 {
     public partial class KvantuMarket : Form
     {
-        Dictionary<string, string> item_info_eld;
-        Dictionary<string, string> item_info_mv;
-        Dictionary<string, string> item_info_dns;
-        Dictionary<string, string> item_info_el;
-        Dictionary<string, string> item_info_ya;
-        Dictionary<string, string> item_info_sb;
+        Dictionary<string, string> xpath_eld;
+        Dictionary<string, string> xpath_mv;
+        Dictionary<string, string> xpath_dns;
+        Dictionary<string, string> xpath_el;
+        Dictionary<string, string> xpath_ya;
+        Dictionary<string, string> xpath_sb;
 
         ChromeOptions options = new ChromeOptions();
         ChromeDriver driver;
-        WebDriverWait wait;
         Dictionary<string, string> shop_url;
-
-        //https://market.yandex.ru{}/offers?glfilter=25879492%3A25879630_{id}&cpa=1&grhow=supplier&local-offers-first=0&sku=id
         public KvantuMarket()
         {
             InitializeComponent(); 
@@ -37,12 +34,12 @@ namespace Kvantum_Market
         private void Form1_Load(object sender, EventArgs e)
         {
             shop_url = new Dictionary<string, string>();
-            item_info_eld = new Dictionary<string, string>();
-            item_info_mv = new Dictionary<string, string>();
-            item_info_dns = new Dictionary<string, string>();
-            item_info_el = new Dictionary<string, string>();
-            item_info_ya = new Dictionary<string, string>();
-            item_info_sb = new Dictionary<string, string>();
+            xpath_eld = new Dictionary<string, string>();
+            xpath_mv = new Dictionary<string, string>();
+            xpath_dns = new Dictionary<string, string>();
+            xpath_el = new Dictionary<string, string>();
+            xpath_ya = new Dictionary<string, string>();
+            xpath_sb = new Dictionary<string, string>();
 
             #region options
 
@@ -54,7 +51,7 @@ namespace Kvantum_Market
             options.AddArguments("--disable-java");
             //options.AddArguments("--blink-settings");
             options.AddArguments("user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36'");
-            //options.AddArguments("--no-sandbox");
+            options.AddArguments("--no-sandbox");
             //options.AddArguments("--ignore-certificate-errors");
             //options.AddArguments("--disable-automation");
             //options.AddArguments("--disable-blink-features=AutomationControlled");
@@ -63,85 +60,68 @@ namespace Kvantum_Market
             var driverService = ChromeDriverService.CreateDefaultService();
             driverService.HideCommandPromptWindow = true;
             driver = new ChromeDriver(driverService, options);
-
+            driver.Navigate().GoToUrl("https://www.eldorado.ru/search/catalog.php?q=");
             
             shop_url.Add("Эльдорадо", "https://www.eldorado.ru/search/catalog.php?q=");
-            shop_url.Add("Днс", "https://www.dns-shop.ru/search/?q=");
-            shop_url.Add("Мвидео", "https://www.mvideo.ru/product-list-page?q=");
+            //shop_url.Add("Днс", "https://www.dns-shop.ru/search/?q=");
+            //shop_url.Add("Мвидео", "https://www.mvideo.ru/product-list-page?q=");
             shop_url.Add("Элекс", "https://elex.ru/search/?q=");
             shop_url.Add("Яндекс", "https://market.yandex.ru/search?cvredirect=2&text=");
             shop_url.Add("Сбер", "https://sbermegamarket.ru/catalog/?q=");
 
 
+            #region xpath
+            xpath_eld.Add("name", "//div/a[@data-dy='title']");
+            xpath_eld.Add("price", "//div/span[@data-pc='offer_price']");
+            xpath_eld.Add("img", "//div[@data-dy='productsList']/a/img");
+            xpath_eld.Add("link", "//li/div[@data-dy='productsList']/a");
 
-            item_info_eld.Add("name", "//div/a[@data-dy='title']");
-            item_info_eld.Add("price", "//div/span[@data-pc='offer_price']");
-            item_info_eld.Add("img", "//div[@data-dy='productsList']/a/img");
-            item_info_eld.Add("link", "//li/div[@data-dy='productsList']/a");
+            xpath_mv.Add("price", "//span[@class='price__main-value']");
+            xpath_mv.Add("name", "//div[@class='product-title product-title--grid']/a");
+            xpath_mv.Add("img", "//img[@class='product-picture__img product-picture__img--grid']");
+            xpath_mv.Add("link", "//div[@class='product-title product-title--grid']/a");
 
-            item_info_mv.Add("price", "//span[@class='price__main-value']");
-            item_info_mv.Add("name", "//div[@class='product-title product-title--grid']/a");
-            item_info_mv.Add("img", "//img[@class='product-picture__img product-picture__img--grid']");
-            item_info_mv.Add("link", "//div[@class='product-title product-title--grid']/a");
+            xpath_dns.Add("price", "//div[@class='product-buy__price']");
+            xpath_dns.Add("name", "//div[@data-id='product']/a/span");
+            xpath_dns.Add("img", "//div[@data-id='product']/div/a/picture/img");
+            xpath_dns.Add("link", "//a[@class='catalog-product__name ui-link ui-link_black']");
 
-            item_info_dns.Add("price", "//div[@class='product-buy__price']");
-            item_info_dns.Add("name", "//div[@data-id='product']/a/span");
-            item_info_dns.Add("img", "//div[@data-id='product']/div/a/picture/img");
-            item_info_dns.Add("link", "//a[@class='catalog-product__name ui-link ui-link_black']");
+            xpath_el.Add("price", "//span[@class='product__new']");
+            xpath_el.Add("name", "//a[@class='product__name']");
+            xpath_el.Add("img", "//img[@itemprop='image']");
+            xpath_el.Add("link", "//div[@class='product__info']/a");
 
-            item_info_el.Add("price", "//span[@class='product__new']");
-            item_info_el.Add("name", "//a[@class='product__name']");
-            item_info_el.Add("img", "//img[@itemprop='image']");
-            item_info_el.Add("link", "//div[@class='product__info']/a");
+            xpath_ya.Add("price", "//div[@data-zone-name='price']/div/a/div/span/span");
+            xpath_ya.Add("name", "//h3[@data-zone-name='title']");
+            xpath_ya.Add("img", "//div[@class='_2zfPd']/a/img");
+            xpath_ya.Add("link", "//div[@class='_2zfPd']/a");
 
-            item_info_ya.Add("price", "//div[@data-zone-name='price']/div/a/div/span/span");
-            item_info_ya.Add("name", "//h3[@data-zone-name='title']");
-            item_info_ya.Add("img", "//div[@class='_2zfPd']/a/img");
-            item_info_ya.Add("link", "//div[@class='_2zfPd']/a");
-
-            item_info_sb.Add("price", "//div[@itemprop='offers']/span");
-            item_info_sb.Add("name", "//div[@itemprop='name']/a");
-            item_info_sb.Add("img", "//div[@class='item-image item-image_changeable']/a/img");
-            item_info_sb.Add("link", "//div[@class='item-image item-image_changeable']/a");
-
+            xpath_sb.Add("price", "//div[@itemprop='offers']/span");
+            xpath_sb.Add("name", "//div[@itemprop='name']/a");
+            xpath_sb.Add("img", "//div[@class='item-image item-image_changeable']/a/img");
+            xpath_sb.Add("link", "//div[@itemprop='name']/a");
+            #endregion
         }
 
         private void start_search_Click(object sender, EventArgs e)
-        {
+        {           
             Dictionary<string, Dictionary<string, string>> result = new Dictionary<string, Dictionary<string, string>>();
             Dictionary<string, string> eld_result = new Dictionary<string, string>();
             Dictionary<string, string> sb_result = new Dictionary<string, string>();
+            Dictionary<string, string> mv_result = new Dictionary<string, string>();
             string search = search_string.Text;
-            eld_result = get_data(shop_url["Эльдорадо"], search, item_info_eld);
+            eld_result = get_data(shop_url["Эльдорадо"], search, xpath_eld);
             result.Add("Эльдорадо", eld_result);
+            sb_result = get_data(shop_url["Сбер"], search, xpath_sb);
+            result.Add("Сбер", sb_result);
 
-            //sb_result = get_data(shop_url["Сбер"], search, item_info_sb);
-            //result.Add("Сбер", sb_result);
+            best_info.Text = $"{result["Сбер"]["name"]}\n\nЦена: {result["Сбер"]["price"]}";
+            best_link.Text = $"{result["Сбер"]["link"]}";
+            inf_box1.Text = $"{result["Эльдорадо"]["name"]}\n\nЦена: {result["Эльдорадо"]["price"]}";
 
-            inf_eld.Text = $"{result["Эльдорадо"]["name"]}";
-            inf_sb.Text = $"{result["Эльдорадо"]["price"]}";
+            title.Text = $"По вашему запросу {search} было найдено";
+            best_price.Text = "Лучшая цена";
 
-            ////result = get_data(shop_url["Мвидео"], search, item_info_mv);
-            ////img_mv.ImageLocation = $"{result["img"]}";
-            ////inf_mv.Text = $"{result["name"]}" + Environment.NewLine + $"{result["price"]}";
-            ////result.Clear();
-            //result = get_data(shop_url["Элекс"], search, item_info_el);
-            ////img_el.ImageLocation = $"{result["img"]}";
-            //inf_el.Text = $"{result["name"]}" + Environment.NewLine + $"{result["price"]}";
-            //result.Clear();
-            //result = get_data(shop_url["Яндекс"], search, item_info_ya);
-            ////img_ya.ImageLocation = $"{result["img"]}";
-            //inf_ya.Text = $"{result["name"]}" + Environment.NewLine + $"{result["price"]}";
-            //result.Clear();
-            //result = get_data(shop_url["Сбер"], search, item_info_sb);
-            ////img_sb.ImageLocation = $"{result["img"]}";
-            //inf_sb.Text = $"{result["name"]}" + Environment.NewLine + $"{result["price"]}";
-            //result.Clear();
-            ////result = get_data(shop_url["Днс"], search, item_info_dns);
-            ////foreach (string item in result)
-            ////{
-            ////    textBox2.Text += item + Environment.NewLine;
-            ////}
             #region price.ru
             //driver.Navigate().GoToUrl("https://price.ru/naushniki/apple-airpods-max/");
             //Thread.Sleep(1000);
@@ -213,7 +193,6 @@ namespace Kvantum_Market
         {
             driver.Navigate().GoToUrl($"{url}{search}");
             Thread.Sleep(1000);
-            var wer = driver.PageSource;
             var name_item = driver.FindElement(By.XPath(xpath["name"]));
             var price_item = driver.FindElement(By.XPath(xpath["price"]));
             //var img_item = driver.FindElement(By.XPath(xpath["img"]));
@@ -221,18 +200,21 @@ namespace Kvantum_Market
             Dictionary<string, string> result = new Dictionary<string, string>
             {
                 ["name"] = name_item.Text,
-                ["price"] = wer,
+                ["price"] = price_item.Text,
                 ////["img"] = img_item.GetAttribute("src"),
-                //["link"] = link_item.GetAttribute("href")
+                ["link"] = link_item.GetAttribute("href")
 
             };
-
-
             return result;
 
 
 
 
+        }
+
+        private void best_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(best_link.Text);
         }
     }
 }
