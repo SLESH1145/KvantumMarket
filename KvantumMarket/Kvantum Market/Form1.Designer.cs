@@ -1,5 +1,5 @@
 ﻿
-namespace Kvantum_Market
+namespace KvantumMarket
 {
     partial class KvantuMarket
     {
@@ -37,31 +37,31 @@ namespace Kvantum_Market
             this.best_info = new System.Windows.Forms.Label();
             this.inf_box1 = new System.Windows.Forms.Label();
             this.link_1 = new System.Windows.Forms.LinkLabel();
-            this.img_1 = new System.Windows.Forms.PictureBox();
-            this.best_img = new System.Windows.Forms.PictureBox();
             this.price_1 = new System.Windows.Forms.Label();
-            this.img_2 = new System.Windows.Forms.PictureBox();
             this.link_2 = new System.Windows.Forms.LinkLabel();
             this.price_2 = new System.Windows.Forms.Label();
             this.name_2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.link_3 = new System.Windows.Forms.LinkLabel();
             this.price_3 = new System.Windows.Forms.Label();
             this.name_3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.link_4 = new System.Windows.Forms.LinkLabel();
             this.price_4 = new System.Windows.Forms.Label();
             this.name_4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.link_5 = new System.Windows.Forms.LinkLabel();
             this.price_5 = new System.Windows.Forms.Label();
             this.name_5 = new System.Windows.Forms.Label();
+            this.img_5 = new System.Windows.Forms.PictureBox();
+            this.img_4 = new System.Windows.Forms.PictureBox();
+            this.img_3 = new System.Windows.Forms.PictureBox();
+            this.img_2 = new System.Windows.Forms.PictureBox();
+            this.img_1 = new System.Windows.Forms.PictureBox();
+            this.best_img = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.img_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.best_img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // search_string
@@ -138,25 +138,6 @@ namespace Kvantum_Market
             this.link_1.TabIndex = 12;
             this.link_1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_1_LinkClicked);
             // 
-            // img_1
-            // 
-            this.img_1.Image = global::Kvantum_Market.Properties.Resources.Без_имени;
-            this.img_1.ImageLocation = "";
-            this.img_1.Location = new System.Drawing.Point(458, 144);
-            this.img_1.Name = "img_1";
-            this.img_1.Size = new System.Drawing.Size(87, 80);
-            this.img_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img_1.TabIndex = 13;
-            this.img_1.TabStop = false;
-            // 
-            // best_img
-            // 
-            this.best_img.Location = new System.Drawing.Point(16, 144);
-            this.best_img.Name = "best_img";
-            this.best_img.Size = new System.Drawing.Size(126, 155);
-            this.best_img.TabIndex = 8;
-            this.best_img.TabStop = false;
-            // 
             // price_1
             // 
             this.price_1.BackColor = System.Drawing.SystemColors.HighlightText;
@@ -166,18 +147,6 @@ namespace Kvantum_Market
             this.price_1.Size = new System.Drawing.Size(109, 58);
             this.price_1.TabIndex = 11;
             this.price_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // img_2
-            // 
-            this.img_2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.img_2.Image = global::Kvantum_Market.Properties.Resources.Без_имени;
-            this.img_2.ImageLocation = "";
-            this.img_2.Location = new System.Drawing.Point(458, 241);
-            this.img_2.Name = "img_2";
-            this.img_2.Size = new System.Drawing.Size(87, 80);
-            this.img_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img_2.TabIndex = 20;
-            this.img_2.TabStop = false;
             // 
             // link_2
             // 
@@ -208,18 +177,6 @@ namespace Kvantum_Market
             this.name_2.Size = new System.Drawing.Size(361, 58);
             this.name_2.TabIndex = 17;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.pictureBox1.Image = global::Kvantum_Market.Properties.Resources.Без_имени;
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(458, 335);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
-            // 
             // link_3
             // 
             this.link_3.BackColor = System.Drawing.SystemColors.HighlightText;
@@ -248,18 +205,6 @@ namespace Kvantum_Market
             this.name_3.Name = "name_3";
             this.name_3.Size = new System.Drawing.Size(361, 58);
             this.name_3.TabIndex = 21;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.pictureBox2.Image = global::Kvantum_Market.Properties.Resources.Без_имени;
-            this.pictureBox2.ImageLocation = "";
-            this.pictureBox2.Location = new System.Drawing.Point(458, 429);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 80);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
             // 
             // link_4
             // 
@@ -290,17 +235,6 @@ namespace Kvantum_Market
             this.name_4.Size = new System.Drawing.Size(361, 58);
             this.name_4.TabIndex = 25;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Kvantum_Market.Properties.Resources.Без_имени;
-            this.pictureBox3.ImageLocation = "";
-            this.pictureBox3.Location = new System.Drawing.Point(457, 521);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(87, 80);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 32;
-            this.pictureBox3.TabStop = false;
-            // 
             // link_5
             // 
             this.link_5.BackColor = System.Drawing.SystemColors.HighlightText;
@@ -330,6 +264,68 @@ namespace Kvantum_Market
             this.name_5.Size = new System.Drawing.Size(361, 58);
             this.name_5.TabIndex = 29;
             // 
+            // img_5
+            // 
+            this.img_5.ImageLocation = "";
+            this.img_5.Location = new System.Drawing.Point(457, 521);
+            this.img_5.Name = "img_5";
+            this.img_5.Size = new System.Drawing.Size(87, 80);
+            this.img_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_5.TabIndex = 32;
+            this.img_5.TabStop = false;
+            // 
+            // img_4
+            // 
+            this.img_4.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.img_4.ImageLocation = "";
+            this.img_4.Location = new System.Drawing.Point(458, 429);
+            this.img_4.Name = "img_4";
+            this.img_4.Size = new System.Drawing.Size(87, 80);
+            this.img_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_4.TabIndex = 28;
+            this.img_4.TabStop = false;
+            // 
+            // img_3
+            // 
+            this.img_3.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.img_3.ImageLocation = "";
+            this.img_3.Location = new System.Drawing.Point(458, 335);
+            this.img_3.Name = "img_3";
+            this.img_3.Size = new System.Drawing.Size(87, 80);
+            this.img_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_3.TabIndex = 24;
+            this.img_3.TabStop = false;
+            // 
+            // img_2
+            // 
+            this.img_2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.img_2.ImageLocation = "";
+            this.img_2.Location = new System.Drawing.Point(458, 241);
+            this.img_2.Name = "img_2";
+            this.img_2.Size = new System.Drawing.Size(87, 80);
+            this.img_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_2.TabIndex = 20;
+            this.img_2.TabStop = false;
+            // 
+            // img_1
+            // 
+            this.img_1.ImageLocation = "";
+            this.img_1.Location = new System.Drawing.Point(458, 144);
+            this.img_1.Name = "img_1";
+            this.img_1.Size = new System.Drawing.Size(87, 80);
+            this.img_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_1.TabIndex = 13;
+            this.img_1.TabStop = false;
+            // 
+            // best_img
+            // 
+            this.best_img.Location = new System.Drawing.Point(16, 144);
+            this.best_img.Name = "best_img";
+            this.best_img.Size = new System.Drawing.Size(126, 155);
+            this.best_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.best_img.TabIndex = 8;
+            this.best_img.TabStop = false;
+            // 
             // KvantuMarket
             // 
             this.AcceptButton = this.start_search;
@@ -338,15 +334,15 @@ namespace Kvantum_Market
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1177, 635);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.img_5);
             this.Controls.Add(this.link_5);
             this.Controls.Add(this.price_5);
             this.Controls.Add(this.name_5);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.img_4);
             this.Controls.Add(this.link_4);
             this.Controls.Add(this.price_4);
             this.Controls.Add(this.name_4);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.img_3);
             this.Controls.Add(this.link_3);
             this.Controls.Add(this.price_3);
             this.Controls.Add(this.name_3);
@@ -368,12 +364,15 @@ namespace Kvantum_Market
             this.Name = "KvantuMarket";
             this.Text = "Kvantum Market";
             this.Load += new System.EventHandler(this.Form1_Load);
+
+
+
+            ((System.ComponentModel.ISupportInitialize)(this.img_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.best_img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,15 +395,15 @@ namespace Kvantum_Market
         private System.Windows.Forms.LinkLabel link_2;
         private System.Windows.Forms.Label price_2;
         private System.Windows.Forms.Label name_2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox img_3;
         private System.Windows.Forms.LinkLabel link_3;
         private System.Windows.Forms.Label price_3;
         private System.Windows.Forms.Label name_3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox img_4;
         private System.Windows.Forms.LinkLabel link_4;
         private System.Windows.Forms.Label price_4;
         private System.Windows.Forms.Label name_4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox img_5;
         private System.Windows.Forms.LinkLabel link_5;
         private System.Windows.Forms.Label price_5;
         private System.Windows.Forms.Label name_5;

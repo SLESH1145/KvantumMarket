@@ -63,9 +63,9 @@ namespace Kvantum_Market.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fefe {
+        internal static System.Drawing.Bitmap Eldorado {
             get {
-                object obj = ResourceManager.GetObject("fefe", resourceCulture);
+                object obj = ResourceManager.GetObject("Eldorado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Kvantum_Market.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fefe1 {
+        internal static System.Drawing.Bitmap Elex {
             get {
-                object obj = ResourceManager.GetObject("fefe1", resourceCulture);
+                object obj = ResourceManager.GetObject("Elex", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,39 @@ namespace Kvantum_Market.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Без_имени {
+        internal static System.Drawing.Bitmap MKS {
             get {
-                object obj = ResourceManager.GetObject("Без имени", resourceCulture);
+                object obj = ResourceManager.GetObject("MKS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sber {
+            get {
+                object obj = ResourceManager.GetObject("Sber", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sitilink {
+            get {
+                object obj = ResourceManager.GetObject("Sitilink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Svyznoy {
+            get {
+                object obj = ResourceManager.GetObject("Svyznoy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

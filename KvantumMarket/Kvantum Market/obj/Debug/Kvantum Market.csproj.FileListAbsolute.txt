@@ -70,3 +70,47 @@ C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\o
 C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.pdb
 C:\Users\a.kiselev\Documents\GitHub\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\WebDriver.Support.dll
 D:\C#\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\WebDriver.Support.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Kvantum Market.exe.config
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Kvantum Market.exe
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Kvantum Market.pdb
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BouncyCastle.Crypto.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BrotliSharpLib.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\HtmlAgilityPack.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Microsoft.Win32.Registry.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Buffers.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Memory.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Numerics.Vectors.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.AccessControl.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.Principal.Windows.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\WebDriver.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\WebDriver.Support.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BouncyCastle.Crypto.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\BrotliSharpLib.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\HtmlAgilityPack.pdb
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\HtmlAgilityPack.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Microsoft.Win32.Registry.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Buffers.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Memory.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Numerics.Vectors.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.AccessControl.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Security.Principal.Windows.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.AssemblyReference.cache
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum_Market.Properties.Resources.resources
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.GenerateResource.cache
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.CoreCompileInputs.cache
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.csproj.CopyComplete
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.exe
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\Kvantum Market.pdb
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\obj\Debug\KvantumMarket.KvantuMarket.resources
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Elasticsearch.Net.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Nest.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Elasticsearch.Net.pdb
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Elasticsearch.Net.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Nest.pdb
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\Nest.xml
+D:\Python\GitHub prodject\KvantumMarket\KvantumMarket\Kvantum Market\bin\Debug\System.Diagnostics.DiagnosticSource.xml
