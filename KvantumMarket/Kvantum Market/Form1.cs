@@ -31,7 +31,7 @@ namespace KvantumMarket
         Dictionary<string, string> xpath_mks;
         Dictionary<string, string> xpath_pr;
         Dictionary<string, string> xpath_sv;
-
+        int i = 1;
 
         ChromeOptions options = new ChromeOptions();
         ChromeDriver driver;
@@ -45,7 +45,7 @@ namespace KvantumMarket
         private void Form1_Load(object sender, EventArgs e)
         {
             shop_url = new Dictionary<string, string>();
-
+            progressBar1.BackColor = Color.FromName("HighlightText");
             xpath_eld = new Dictionary<string, string>();
             xpath_mv = new Dictionary<string, string>();
             xpath_dns = new Dictionary<string, string>();
@@ -74,11 +74,9 @@ namespace KvantumMarket
             options.AddArguments("--disable-automation");
             options.AddArguments("--disable-blink-features=AutomationControlled");
             #endregion
-            var driverService = ChromeDriverService.CreateDefaultService();
-            driverService.HideCommandPromptWindow = true;
-            driver = new ChromeDriver(driverService, options);
 
-            driver.Navigate().GoToUrl("https://www.eldorado.ru/search/catalog.php?q=");
+
+            //driver.Navigate().GoToUrl("https://www.eldorado.ru/search/catalog.php?q=");
 
 
             shop_url.Add("Eldorado", "https://www.eldorado.ru/search/catalog.php?q=");
@@ -99,6 +97,7 @@ namespace KvantumMarket
             xpath_eld.Add("price", "//div/span[@data-pc='offer_price']");
             xpath_eld.Add("img", "//div[@data-dy='productsList']/a/img");
             xpath_eld.Add("link", "//li/div[@data-dy='productsList']/a");
+            xpath_eld.Add("old", "");
 
             //xpath_dns.Add("price", "//div[@class='product-buy__price']");
             //xpath_dns.Add("name", "//div[@data-id='product']/a/span");
@@ -109,6 +108,7 @@ namespace KvantumMarket
             xpath_el.Add("name", "//a[@class='product__name']");
             xpath_el.Add("img", "//img[@itemprop='image']");
             xpath_el.Add("link", "//div[@class='product__info']/a");
+            xpath_el.Add("old", "//span[@class='product__old']");
 
             //xpath_ya.Add("price", "//div[@data-zone-name='price']/div/a/div/span/span");
             //xpath_ya.Add("name", "//h3[@data-zone-name='title']");
@@ -119,42 +119,51 @@ namespace KvantumMarket
             xpath_sb.Add("name", "//div[@itemprop='name']/a");
             xpath_sb.Add("img", "//div[@class='item-image item-image_changeable']/a/img");
             xpath_sb.Add("link", "//div[@itemprop='name']/a");
+            xpath_sb.Add("old", "//span[@class='item-old-price__price item-old-price__price_spaced']");
 
             xpath_siti.Add("price", "//div[@class='ProductCardVerticalLayout__wrapper-cart']/div/div/div/div/div/span/span[@class='ProductCardVerticalPrice__price-current_current-price js--ProductCardVerticalPrice__price-current_current-price ']");
             xpath_siti.Add("name", "//a[@class=' ProductCardVertical__name  Link js--Link Link_type_default']");
-            xpath_siti.Add("img", "");
+            xpath_siti.Add("img", "//img[@class='ProductCardHorizontal__image Image']");
             xpath_siti.Add("link", "//a[@class=' ProductCardVertical__link link_gtm-js  Link js--Link Link_type_default']");
+            xpath_siti.Add("old", "//span[@class='_current-price js--_current-price ']");
 
-            xpath_ot.Add("price", "//span[@class='price regular']");
-            xpath_ot.Add("name", "//a[@class='indexGoods__item__name']");
-            xpath_ot.Add("img", "");
-            xpath_ot.Add("link", "//a[@class='indexGoods__item__name']");
+            //xpath_ot.Add("price", "//span[@class='price regular']");
+            //xpath_ot.Add("name", "//a[@class='indexGoods__item__name']");
+            //xpath_ot.Add("img", "");
+            //xpath_ot.Add("link", "//a[@class='indexGoods__item__name']");
 
             xpath_mks.Add("price", "//p[@class='price']");
             xpath_mks.Add("name", "//div[@class='caption']/h4/a");
-            xpath_mks.Add("img", "");
+            xpath_mks.Add("img", "//img[@class='img-responsive']");
             xpath_mks.Add("link", "//div[@class='caption']/h4/a");
+            xpath_mks.Add("old", "");
 
-            xpath_mv.Add("price", "//span[@class='price__main-value']");
-            xpath_mv.Add("name", "//a[@class='product-title__text product-title--clamp']");
-            xpath_mv.Add("img", "");
-            xpath_mv.Add("link", "//a[@class='product-title__text product-title--clamp']");
+            //xpath_mv.Add("price", "//span[@class='price__main-value']");
+            //xpath_mv.Add("name", "//a[@class='product-title__text product-title--clamp']");
+            //xpath_mv.Add("img", "");
+            //xpath_mv.Add("link", "//a[@class='product-title__text product-title--clamp']");
 
-            xpath_pr.Add("price", "//span[@class='text-subtitle-price-bold main-price']");
-            xpath_pr.Add("name", "//div[@class='p-c-price__description']/a");
-            xpath_pr.Add("img", "");
-            xpath_pr.Add("link", "//div/a[@class='cpc-link p-c-price__shop text-body-s-book']/span");
+            //xpath_pr.Add("price", "//span[@class='text-subtitle-price-bold main-price']");
+            //xpath_pr.Add("name", "//div[@class='p-c-price__description']/a");
+            //xpath_pr.Add("img", "");
+            //xpath_pr.Add("link", "//div/a[@class='cpc-link p-c-price__shop text-body-s-book']/span");
 
-            xpath_sv.Add("price", "//span[@class='b-product-block__visible-price ']");
+            xpath_sv.Add("price", "//div[@class='b-product-block__price-block  ']/span");
             xpath_sv.Add("name", "//span[@itemprop='name']");
-            xpath_sv.Add("img", "");
+            xpath_sv.Add("img", "//img[@itemprop='image']");
             xpath_sv.Add("link", "//a[@class='b-product-block__main-link']");
+            xpath_sv.Add("old", "//div[@class='b-product-block__price-block  ']/s[@class='b-product-block__price-old']");
 
             #endregion
         }
 
         private void start_search_Click(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
+            
+            var driverService = ChromeDriverService.CreateDefaultService();
+            driverService.HideCommandPromptWindow = true;
+            driver = new ChromeDriver(driverService, options);
 
             result = new Dictionary<string, Dictionary<string, string>>();
             Dictionary<string, string> siti_result;
@@ -192,8 +201,6 @@ namespace KvantumMarket
             driver.Quit();
 
 
-
-
             if (result["Sitilink"]["price"] != null)
             {
                 result["Sitilink"]["price"] = result["Sitilink"]["price"].Replace(" ", "").Trim();
@@ -220,14 +227,17 @@ namespace KvantumMarket
             }
 
 
+
+                
+            
+
             result["Elex"]["link"] = $"https://elex.ru{result["Elex"]["link"]}";
             result["Sitilink"]["link"] = $"https://www.citilink.ru{result["Sitilink"]["link"]}";
-            result["Svyaznoy"]["link"] = $"{result["Svyaznoy"]["link"]}";
 
             string best_shop_name = best_shop(result);
 
 
-            best_info.Text = $"{result[best_shop_name]["name"]}\n\nЦена: {result[best_shop_name]["price"]}";
+            best_info.Text = $"{result[best_shop_name]["name"]}\n\nЦена: {result[best_shop_name]["price"]} ₽";
             best_info.BackColor = Color.FromName("MenuBar");
             best_link.Text = $"{result[best_shop_name]["link"]}";
             if (result[best_shop_name]["img"] != null)
@@ -242,7 +252,7 @@ namespace KvantumMarket
                 if (i == 0)
                 {
                     inf_box1.Text = $"{result[name.Key]["name"]}";
-                    price_1.Text = $"{result[name.Key]["price"]}";
+                    price_1.Text = $"{result[name.Key]["price"]} ₽";
                     link_1.Text = $"{result[name.Key]["link"]}";
                     price_1.BackColor = Color.FromName("MenuBar");
                     inf_box1.BackColor = Color.FromName("MenuBar");
@@ -271,12 +281,15 @@ namespace KvantumMarket
                     {
                         img_1.Image = Resources.Eldorado;
                     }
-
+                    if (result[name.Key]["old"] != null)
+                    {
+                        price_1.ForeColor = Color.FromName("Red");
+                    }
                 }
                 if (i == 1)
                 {
                     name_2.Text = $"{result[name.Key]["name"]}";
-                    price_2.Text = $"{result[name.Key]["price"]}";
+                    price_2.Text = $"{result[name.Key]["price"]} ₽";
                     link_2.Text = $"{result[name.Key]["link"]}";
                     price_2.BackColor = Color.FromName("MenuBar");
                     name_2.BackColor = Color.FromName("MenuBar");
@@ -305,11 +318,15 @@ namespace KvantumMarket
                     {
                         img_2.Image = Resources.Eldorado;
                     }
+                    if (result[name.Key]["old"] != null)
+                    {
+                        price_2.ForeColor = Color.FromName("Red");
+                    }
                 }
                 if (i == 2)
                 {
                     name_3.Text = $"{result[name.Key]["name"]}";
-                    price_3.Text = $"{result[name.Key]["price"]}";
+                    price_3.Text = $"{result[name.Key]["price"]} ₽";
                     link_3.Text = $"{result[name.Key]["link"]}";
                     price_3.BackColor = Color.FromName("MenuBar");
                     name_3.BackColor = Color.FromName("MenuBar");
@@ -338,11 +355,15 @@ namespace KvantumMarket
                     {
                         img_3.Image = Resources.Eldorado;
                     }
+                    if (result[name.Key]["old"] != null)
+                    {
+                        price_3.ForeColor = Color.FromName("Red");
+                    }
                 }
                 if (i == 3)
                 {
                     name_4.Text = $"{result[name.Key]["name"]}";
-                    price_4.Text = $"{result[name.Key]["price"]}";
+                    price_4.Text = $"{result[name.Key]["price"]} ₽";
                     link_4.Text = $"{result[name.Key]["link"]}";
                     price_4.BackColor = Color.FromName("MenuBar");
                     name_4.BackColor = Color.FromName("MenuBar");
@@ -371,11 +392,15 @@ namespace KvantumMarket
                     {
                         img_4.Image = Resources.Eldorado;
                     }
+                    if (result[name.Key]["old"] != null)
+                    {
+                        price_4.ForeColor = Color.FromName("Red");
+                    }
                 }
                 if (i == 4)
                 {
                     name_5.Text = $"{result[name.Key]["name"]}";
-                    price_5.Text = $"{result[name.Key]["price"]}";
+                    price_5.Text = $"{result[name.Key]["price"]} ₽";
                     link_5.Text = $"{result[name.Key]["link"]}";
                     price_5.BackColor = Color.FromName("MenuBar");
                     name_5.BackColor = Color.FromName("MenuBar");
@@ -403,6 +428,10 @@ namespace KvantumMarket
                     if (name.Key == "Eldorado")
                     {
                         img_5.Image = Resources.Eldorado;
+                    }
+                    if (result[name.Key]["old"] != null)
+                    {
+                        price_5.ForeColor = Color.FromName("Red");
                     }
                 }
                 i++;
@@ -485,7 +514,8 @@ namespace KvantumMarket
                 ["name"] = null,
                 ["price"] = null,
                 ["link"] = null,
-                ["img"] = null
+                ["img"] = null,
+                ["old"] = null
 
             };
             try
@@ -501,6 +531,15 @@ namespace KvantumMarket
                 result["price"] = price_item.Text.Trim();
                 var img_item = driver.FindElement(By.XPath(xpath["img"]));
                 result["img"] = img_item.GetAttribute("src").Trim();
+                try
+                {
+                    var old_item = driver.FindElement(By.XPath(xpath["old"]));
+                    result["old"] = old_item.Text.Trim();
+                }
+                catch (Exception)
+                {
+                    result["old"] = null;
+                }
             }
             catch (Exception ex)
             {
@@ -518,7 +557,8 @@ namespace KvantumMarket
                 ["name"] = null,
                 ["price"] = null,
                 ["link"] = null,
-                ["img"] = null
+                ["img"] = null,
+                ["old"] = null
 
 
             };
@@ -534,6 +574,15 @@ namespace KvantumMarket
                 result["price"] = $"{price.InnerText.Trim()}";
                 HtmlNode img = doc.DocumentNode.SelectSingleNode(xpath["img"]);
                 result["img"] = $"{img.Attributes["src"].Value.Trim()}";
+                try
+                {
+                    HtmlNode old = doc.DocumentNode.SelectSingleNode(xpath["old"]);
+                    result["old"] = $"{old.InnerText.Trim()}";
+                }
+                catch (Exception)
+                {
+                    result["old"] = null;
+                }
 
             }
             catch (Exception ex)
@@ -629,9 +678,6 @@ namespace KvantumMarket
             System.Diagnostics.Process.Start(link_5.Text);
         }
 
-        private void Form1_Closing(object sender, FormClosedEventHandler e)
-        {
 
-        }
     }
 }

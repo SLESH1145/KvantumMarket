@@ -29,6 +29,7 @@ namespace KvantumMarket
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.search_string = new System.Windows.Forms.TextBox();
             this.start_search = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
@@ -56,6 +57,8 @@ namespace KvantumMarket
             this.img_2 = new System.Windows.Forms.PictureBox();
             this.img_1 = new System.Windows.Forms.PictureBox();
             this.best_img = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.img_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).BeginInit();
@@ -87,7 +90,7 @@ namespace KvantumMarket
             // title
             // 
             this.title.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.Location = new System.Drawing.Point(391, 67);
+            this.title.Location = new System.Drawing.Point(388, 58);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(439, 44);
             this.title.TabIndex = 4;
@@ -141,7 +144,8 @@ namespace KvantumMarket
             // price_1
             // 
             this.price_1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.price_1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.price_1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.price_1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.price_1.Location = new System.Drawing.Point(906, 144);
             this.price_1.Name = "price_1";
             this.price_1.Size = new System.Drawing.Size(109, 58);
@@ -161,7 +165,7 @@ namespace KvantumMarket
             // price_2
             // 
             this.price_2.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.price_2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.price_2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.price_2.Location = new System.Drawing.Point(906, 241);
             this.price_2.Name = "price_2";
             this.price_2.Size = new System.Drawing.Size(109, 58);
@@ -172,7 +176,7 @@ namespace KvantumMarket
             // 
             this.name_2.BackColor = System.Drawing.SystemColors.HighlightText;
             this.name_2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_2.Location = new System.Drawing.Point(551, 241);
+            this.name_2.Location = new System.Drawing.Point(550, 241);
             this.name_2.Name = "name_2";
             this.name_2.Size = new System.Drawing.Size(361, 58);
             this.name_2.TabIndex = 17;
@@ -190,7 +194,7 @@ namespace KvantumMarket
             // price_3
             // 
             this.price_3.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.price_3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.price_3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.price_3.Location = new System.Drawing.Point(906, 335);
             this.price_3.Name = "price_3";
             this.price_3.Size = new System.Drawing.Size(109, 58);
@@ -219,7 +223,7 @@ namespace KvantumMarket
             // price_4
             // 
             this.price_4.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.price_4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.price_4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.price_4.Location = new System.Drawing.Point(906, 429);
             this.price_4.Name = "price_4";
             this.price_4.Size = new System.Drawing.Size(109, 58);
@@ -248,7 +252,7 @@ namespace KvantumMarket
             // price_5
             // 
             this.price_5.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.price_5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.price_5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.price_5.Location = new System.Drawing.Point(905, 521);
             this.price_5.Name = "price_5";
             this.price_5.Size = new System.Drawing.Size(109, 58);
@@ -326,6 +330,19 @@ namespace KvantumMarket
             this.best_img.TabIndex = 8;
             this.best_img.TabStop = false;
             // 
+            // timer1
+            // 
+
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.progressBar1.ForeColor = System.Drawing.Color.LawnGreen;
+            this.progressBar1.Location = new System.Drawing.Point(12, 32);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(224, 25);
+            this.progressBar1.TabIndex = 33;
+            // 
             // KvantuMarket
             // 
             this.AcceptButton = this.start_search;
@@ -334,6 +351,7 @@ namespace KvantumMarket
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1177, 635);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.img_5);
             this.Controls.Add(this.link_5);
             this.Controls.Add(this.price_5);
@@ -364,9 +382,6 @@ namespace KvantumMarket
             this.Name = "KvantuMarket";
             this.Text = "Kvantum Market";
             this.Load += new System.EventHandler(this.Form1_Load);
-
-
-
             ((System.ComponentModel.ISupportInitialize)(this.img_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).EndInit();
@@ -407,6 +422,8 @@ namespace KvantumMarket
         private System.Windows.Forms.LinkLabel link_5;
         private System.Windows.Forms.Label price_5;
         private System.Windows.Forms.Label name_5;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
